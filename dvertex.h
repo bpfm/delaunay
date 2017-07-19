@@ -2,7 +2,7 @@ class dvertex{
 
 private:
 	
-	double x,y,z;
+	double x,y;//,z;
 
 public:
 
@@ -14,8 +14,12 @@ public:
 		y = new_y;
 	}
 
-	void set_z(double new_z){
-		z = new_z;
+	double get_x(){
+		return x;
+	}
+
+	double get_y(){
+		return y;
 	}
 
 };

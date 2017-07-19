@@ -1,19 +1,19 @@
 #include <vector>
 
-#include "dtriangle.h"
-
 using namespace std;
 
 class dtriangulation{
 	
 private:
 
-	vector<dtriangle> triangulation;
+	int dtriangle_id
+	vector<dtriangle> dtriangulation;
 
 public:
 
-	add_triangle(dtriangle new_dtriangle){
-		triangulation.push_back(new_dtriangle);
+	void add_dtriangle(dtriangle new_dtriangle){
+		dtriangulation.push_back(new_dtriangle);
 	}
+
 
 };

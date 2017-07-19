@@ -1,19 +1,30 @@
 #include <vector>
 
-#include "dedge.h"
+using namespace std;
 
 class dtriangle{
 
-public:
-
-	vector<dedge> edges;
-
 private:
 
-	void add_edge(dedge new_dedge){
-		edges.push_back(new_dedge);
+	int id;
+	vector<dvertex> dvertices;
+
+public:
+
+	void set_id(int new_id){
+		id = new_id;
 	}
 
-
+	void add_dvertex(dvertex new_dvertex){
+		dvertices.push_back(new_dvertex);
+	}
 	
+	int get_id(){
+		return id;
+	}
+
+	dvertex get_dvertex(int dvertex_id){
+		return dvertices[dvertex_id];
+	}
+
 };
